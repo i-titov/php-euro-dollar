@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="converter.php" method="POST">
+    <label for="options">Selecter l'option:</label>
+    <select id="options" name="operation">
+        <option value="euro-to-dollar">Echanger des euros contre des dollars</option>
+        <option value="dollar-to-euro">Echanger des dollars contre des eur</option>
+    </select>
+    <label for="changer">Conversion des monnaies</label>
+    <input type="number" name="amount" id="changer" min="1" required>
+    <button type="submit">submit</button>
+</form>
+</body>
+</html>
